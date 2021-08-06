@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/f_E3/f_E3.bdf
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/f_E3/f_DNI.vhd
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/f_E3/Waveform.vwf
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/f_E3/db/f_E3.cbx.xml
+design_name = f_DNI
+instance = comp, \f~output\, f~output, f_DNI, 1
+instance = comp, \A~input\, A~input, f_DNI, 1
+instance = comp, \C~input\, C~input, f_DNI, 1
+instance = comp, \B~input\, B~input, f_DNI, 1
+instance = comp, \f~0\, f~0, f_DNI, 1

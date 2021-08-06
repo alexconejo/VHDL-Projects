@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/T6/T6.vhd
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/T6/L6.vhd
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/T6/Waveform.vwf
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/alexc/Escritorio/QuartusProjects/T6/db/T6.cbx.xml
+design_name = L6
+instance = comp, \F~output\, F~output, L6, 1
+instance = comp, \E~input\, E~input, L6, 1
+instance = comp, \S[2]~input\, S[2]~input, L6, 1
+instance = comp, \S[0]~input\, S[0]~input, L6, 1
+instance = comp, \S[1]~input\, S[1]~input, L6, 1
+instance = comp, \MUX|Z~0\, MUX|Z~0, L6, 1

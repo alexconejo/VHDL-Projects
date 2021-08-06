@@ -1,0 +1,10 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY f5 IS
+	PORT ( Cin     		 : IN STD_LOGIC;
+			 X, Y    		 : IN STD_LOGIC_VECTOR(15DOWNTO0);
+			 S       		 : OUT STD_LOGIC_VECTOR(15DOWNTO0):
+			 Cout, Overflow : OUT STD_LOGIC);
+END f5;

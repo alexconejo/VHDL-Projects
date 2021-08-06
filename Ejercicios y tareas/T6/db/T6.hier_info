@@ -1,0 +1,24 @@
+|L6
+S[0] => T6:MUX.S[0]
+S[1] => T6:MUX.S[1]
+S[2] => T6:MUX.S[2]
+E => T6:MUX.E
+F <= T6:MUX.Z
+
+
+|L6|T6:MUX
+I[0] => Mux0.IN7
+I[1] => Mux0.IN6
+I[2] => Mux0.IN5
+I[3] => Mux0.IN4
+I[4] => Mux0.IN3
+I[5] => Mux0.IN2
+I[6] => Mux0.IN1
+I[7] => Mux0.IN0
+E => Z$latch.ACLR
+S[0] => Mux0.IN10
+S[1] => Mux0.IN9
+S[2] => Mux0.IN8
+Z <= Z$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

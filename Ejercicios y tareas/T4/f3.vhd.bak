@@ -1,0 +1,42 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+--Define Entity
+ENTITY f3 IS 
+	PORT (
+	A , B, C, D: IN STD_LOGIC;
+	f: OUT STD_LOGIC);
+END f3; 
+
+--Define model behaviour
+ARCHITECTURE Behavioral OF f3 IS 
+	--MINITERMINOS
+	SIGNAL m1, m3 , m5, m6 ,m7 ,m13, m15: STD_LOGIC; 
+	--MAXITERMINOS
+	SIGNAL M0, M2, M4, M8, M9, M10, M11, M12, M14: STD_LOGIC; 
+BEGIN 
+
+	m1 <= (NOT A) AND (NOT B) AND (NOT C) AND D;
+	m3 <= (NOT A) AND (NOT B) AND C AND D;
+	m5 <= (NOT A) AND B AND (NOT C) AND D;
+	m6 <= (NOT A) AND B AND C AND (NOT D);
+	m7 <= (NOT A) AND B AND C AND  D;
+	m13 <= A AND B AND (NOT C) AND D;
+	m15 <= A AND B AND C AND D;
+	
+	f<= m1 OR m3 OR m5 OR m6 OR m13 OR m15 ;
+	
+	M0 <= (NOT A) OR (NOT B) OR (NOT C) OR (NOT D);
+	M2 <= (NOT A) OR (NOT B) OR  C OR (NOT D);
+	M4 <= (NOT A) OR  B OR (NOT C) OR (NOT D);
+	M8 <=  A OR (NOT B) OR (NOT C) OR (NOT D);
+	M9 <=  A OR (NOT B) OR C OR (NOT D);
+	M10 <=  A OR (NOT B) OR  C OR D;
+	M11 <= (NOT A) OR (NOT B) OR (NOT C) OR (NOT D);
+	M12 <= A OR  B OR (NOT C) OR (NOT D);
+	M14 <= A OR B OR C OR (NOT D);
+	
+	--f <= M0 AND M2 AND M4 AND M8 AND M9 AND M10 AND M11 AND M12 AND M14;
+	
+END Behavioral;

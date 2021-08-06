@@ -1,0 +1,34 @@
+|f3f4
+A => m13_f3.IN0
+A => m9_f4.IN0
+A => m1_f3.IN0
+A => m5_f3.IN0
+B => m5_f3.IN1
+B => m13_f3.IN1
+B => m1_f3.IN1
+B => m9_f4.IN1
+C => m3_f3.IN1
+C => m6_f3.IN1
+C => m15_f3.IN1
+C => m11_f4.IN1
+C => m1_f3.IN1
+C => m5_f3.IN1
+C => m13_f3.IN1
+C => m9_f4.IN1
+D => m1_f3.IN1
+D => m3_f3.IN1
+D => m5_f3.IN1
+D => m13_f3.IN1
+D => m15_f3.IN1
+D => m1_f4.IN1
+D => m3_f4.IN1
+D => m9_f4.IN1
+D => m11_f4.IN1
+D => m13_f4.IN1
+D => m15_f4.IN1
+D => m6_f3.IN1
+D => m6_f4.IN1
+f3 <= f3.DB_MAX_OUTPUT_PORT_TYPE
+f4 <= f4.DB_MAX_OUTPUT_PORT_TYPE
+
+

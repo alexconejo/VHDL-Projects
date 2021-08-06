@@ -1,0 +1,31 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std;
+
+ENTITY L7 IS
+    PORT (Clock, Resetn, E : IN STD_LOGIC;
+          Q                : OUT UNSIGNED (3 DOWNTO 0));
+
+END L7;
+
+ARCHITECTURE Behavior OF L7 IS 
+    SIGNAL Count: UNSIGNED (3 DOWNTO 0)
+BEGIN 
+    PROCESS (Clock)
+    BEGIN 
+	 
+		IF (Clock'EVENT AND Clock = '1') THEN
+		
+			  IF Resetn = '0' THEN 
+					Count <= "000" ;
+					
+			  ELSE THEN
+					IF E = '1' THEN 
+						Count <= Count + 1;
+					ELSE 
+						Count < = Count;
+					END IF;
+			  END IF;
+    END PROCESS;
+    Q <= Count;
+END Behavior;

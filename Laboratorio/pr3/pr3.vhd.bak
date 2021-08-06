@@ -1,0 +1,8 @@
+LIBRARY iee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY f_DNI IS
+	PORT (
+		A,B,C
+	)
